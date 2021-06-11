@@ -1,0 +1,30 @@
+PODS:
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - xExtension (1.0.4)
+  - xWebImage (1.0.0):
+    - SDWebImage
+    - xExtension
+
+DEPENDENCIES:
+  - xWebImage (from `../`)
+
+SPEC REPOS:
+  https://github.com/kaibuleite/xSpecs.git:
+    - xExtension
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  xWebImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  xExtension: ecc55c6d67e0d5cf1a75403524968c6fc5e23699
+  xWebImage: 4c0d1e704940c4be039ea2943b2ede83c0338707
+
+PODFILE CHECKSUM: 580688c56d0057bc1084709385b477c4b51a0a82
+
+COCOAPODS: 1.9.1

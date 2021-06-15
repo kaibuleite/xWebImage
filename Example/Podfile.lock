@@ -2,17 +2,29 @@ PODS:
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - xAlert (1.0.4):
+    - xDefine
+    - xExtension
+  - xDefine (1.0.2)
   - xExtension (1.0.6)
-  - xWebImage (1.0.0):
+  - xKit (1.0.1):
+    - xAlert
+    - xDefine
+    - xExtension
+  - xWebImage (1.0.2):
     - SDWebImage
     - xExtension
+    - xKit
 
 DEPENDENCIES:
   - xWebImage (from `../`)
 
 SPEC REPOS:
   https://github.com/kaibuleite/xSpecs.git:
+    - xAlert
+    - xDefine
     - xExtension
+    - xKit
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - SDWebImage
 
@@ -22,8 +34,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  xAlert: 4ca680cb65998bc291e02c163121db8fd4bbcf53
+  xDefine: 0df7b51c0e6edb71ca9fd667f728699d0a7a1b12
   xExtension: d141e757ab53a7e0ab73de4cf652d43554c5f80d
-  xWebImage: 4c0d1e704940c4be039ea2943b2ede83c0338707
+  xKit: 0906c4abed4f3517ade437f3b179637ef7c80fe6
+  xWebImage: 39cadaf0641e2a440b4949b197c9a9d7af5f4c4a
 
 PODFILE CHECKSUM: 580688c56d0057bc1084709385b477c4b51a0a82
 

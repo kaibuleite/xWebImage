@@ -1,6 +1,6 @@
 {
   "name": "xWebImage",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "A short description of xWebImage.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/kaibuleite/xWebImage",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/kaibuleite/xWebImage.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -24,6 +24,9 @@
 
     ],
     "xExtension": [
+
+    ],
+    "xKit": [
 
     ]
   }

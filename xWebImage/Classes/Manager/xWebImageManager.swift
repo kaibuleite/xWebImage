@@ -16,6 +16,10 @@ public class xWebImageManager: NSObject {
     /// 单例
     public static let shared = xWebImageManager()
     private override init() { }
+    /// 网络图通用前缀
+    public var webImageURLPrefix = "http"
+    /// 占位图
+    public var placeholderImage = UIColor.xNew(hex: "F5F5F5").xToImage(size: .init(width: 5, height: 5))
     
     // MARK: - SD框架缓存
     /// SD框架图片缓存大小

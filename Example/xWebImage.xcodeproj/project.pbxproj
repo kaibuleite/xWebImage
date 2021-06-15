@@ -314,13 +314,19 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-xWebImage_Example/Pods-xWebImage_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/xAlert/xAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/xDefine/xDefine.framework",
 				"${BUILT_PRODUCTS_DIR}/xExtension/xExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/xKit/xKit.framework",
 				"${BUILT_PRODUCTS_DIR}/xWebImage/xWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xDefine.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

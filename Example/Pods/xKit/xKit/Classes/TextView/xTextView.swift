@@ -7,7 +7,7 @@
 
 import UIKit
 import xDefine
-import xAlert
+import xExtension
 
 open class xTextView: UITextView {
     
@@ -94,7 +94,7 @@ open class xTextView: UITextView {
         self.placeholderTextView.isHidden = (count != 0)
         guard count > self.maxTextCount else { return }
         let msg = String.init(format: "内容不能超过%d字", self.maxTextCount)
-        xMessageAlert.display(message: msg)
+        msg.xAlertTip()
         let str = self.text.xSubPrefix(length: self.maxTextCount)
         self.text = str
     }

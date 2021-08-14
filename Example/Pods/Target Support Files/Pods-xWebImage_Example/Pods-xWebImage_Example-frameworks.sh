@@ -198,7 +198,6 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/xAlert/xAlert.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xDefine/xDefine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xExtension/xExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xKit/xKit.framework"
@@ -206,7 +205,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/xAlert/xAlert.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xDefine/xDefine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xExtension/xExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xKit/xKit.framework"

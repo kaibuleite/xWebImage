@@ -9,26 +9,6 @@ import Foundation
 
 extension UIImage {
     
-    // MARK: - 重新绘制图片
-    /// 重新绘制图片
-    /// - Parameters:
-    ///   - rect: 绘制范围
-    ///   - path: 绘制路径（裁剪路径）
-    /// - Returns: 新图片
-    func xDraw(rect : CGRect,
-               path : UIBezierPath) -> UIImage?
-    {
-        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
-        guard let ctx = UIGraphicsGetCurrentContext() else { return nil }
-        ctx.interpolationQuality = .none   // 高质量
-        ctx.addPath(path.cgPath)
-        ctx.clip()
-        self.draw(in: rect)
-        let ret = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return ret
-    }
-    
     // MARK: - 图片缩放
     /// 缩放图片(等比例)
     /// - Parameter size: 缩放大小
@@ -88,6 +68,26 @@ extension UIImage {
         return ret
     }
     
+    // MARK: - 重新绘制图片
+    /// 重新绘制图片
+    /// - Parameters:
+    ///   - rect: 绘制范围
+    ///   - path: 绘制路径（裁剪路径）
+    /// - Returns: 新图片
+    func xDraw(rect : CGRect,
+               path : UIBezierPath) -> UIImage?
+    {
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
+        guard let ctx = UIGraphicsGetCurrentContext() else { return nil }
+        ctx.interpolationQuality = .none   // 高质量
+        ctx.addPath(path.cgPath)
+        ctx.clip()
+        self.draw(in: rect)
+        let ret = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return ret
+    }
+    
     // MARK: - 图片压缩
     /// 压缩图片
     /// - Parameter size: 指定尺寸(kb)
@@ -95,7 +95,7 @@ extension UIImage {
     public func xCompressTo(size : CGFloat) -> Data?
     {
         // 原始大小
-        var data = UIImageJPEGRepresentation(self, 1)
+        var data = self.jpegData(compressionQuality: 1)
         guard size > 0 else { return data }
         
         var kb = CGFloat(data?.count ?? 0) / 1024
@@ -104,7 +104,7 @@ extension UIImage {
         while kb > size {
             if quality < sub { sub /= 2 }
             quality -= sub
-            data = UIImageJPEGRepresentation(self, quality)
+            data = self.jpegData(compressionQuality: quality)
             kb = CGFloat(data?.count ?? 0) / 1024
         }
         return data

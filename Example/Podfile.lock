@@ -1,14 +1,14 @@
 PODS:
-  - SDWebImage (5.12.5):
-    - SDWebImage/Core (= 5.12.5)
-  - SDWebImage/Core (5.12.5)
-  - xDefine (1.0.4)
-  - xExtension (1.1.2):
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+  - xDefine (1.0.7)
+  - xExtension (1.1.8):
     - xDefine
-  - xKit (1.1.3):
+  - xKit (1.2.10):
     - xDefine
     - xExtension
-  - xWebImage (1.0.4):
+  - xWebImage (1.0.7):
     - SDWebImage
     - xExtension
     - xKit
@@ -29,12 +29,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
-  xDefine: ca6c6eef825544db8b43409e66dbff05eca7ac58
-  xExtension: c0850b5b3c3103c3e57a5be8acdd402daaf02c16
-  xKit: 9a36ad3ba289fa86bfb9999db7c2d6db49ef3b06
-  xWebImage: 554e9809928700284c44c7660dd23de6abd4c96e
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  xDefine: e9216a8c29a4a5abce78630e311449182c79a7f3
+  xExtension: 410b32f4a0377e4962082c7d1315b4b77454f7aa
+  xKit: 8584f4ce6508e6defd0f853c73316b2ba2328e63
+  xWebImage: d90a2571d0b3798b9090418cd2506d067b74c3bd
 
-PODFILE CHECKSUM: 580688c56d0057bc1084709385b477c4b51a0a82
+PODFILE CHECKSUM: a454453b75893e573c3102019a6180f440471037
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.15.2
